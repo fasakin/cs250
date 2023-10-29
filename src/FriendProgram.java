@@ -12,10 +12,10 @@ public class FriendProgram {
     public FriendProgram() {
         scan = new Scanner(System.in);
         container = new FriendContainer();
-        initialize();
+
     }
 
-    private void initialize() {
+    public void initialize() {
         System.out.println();
         System.out.println("Welcome to our Friend App");
         System.out.println("This app will enable you to keep track of your friends");

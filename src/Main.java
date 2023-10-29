@@ -2,9 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        FriendProgram prog = null;
+        FriendProgram prog = new FriendProgram();;
         do {
-            prog = new FriendProgram();
+           prog.initialize();
         }while (prog.isContinue());
     }
 }
