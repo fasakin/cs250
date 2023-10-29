@@ -5,13 +5,12 @@ import models.Gender;
 import java.util.Scanner;
 
 public class FriendProgram {
-    private Scanner scan ;
+    private final Scanner scan = new Scanner(System.in);
     private String command;
-    private FriendContainer container;
+    private final FriendContainer container = new FriendContainer();
 
     public FriendProgram() {
-        scan = new Scanner(System.in);
-        container = new FriendContainer();
+
 
     }
 
