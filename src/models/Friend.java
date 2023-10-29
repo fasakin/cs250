@@ -24,6 +24,6 @@ public class Friend {
     }
 
     public String toString() {
-        return "( FullName: " + fullName + " Gender: " + gender + " Age" + age + ")";
+        return "(Name: " + fullName + ", Gender: " + gender + ", Age: " + age + ")";
     }
 }
