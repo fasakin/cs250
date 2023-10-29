@@ -24,7 +24,7 @@ public class FriendContainer implements Iterable<Friend> {
         friends[size++] = f;
     }
 
-    public Friend[] getFriendsByGender(Gender gender) {
+    private Friend[] getFriendsByGender(Gender gender) {
         Friend[] genderArray = new Friend[size];
         int counter = 0;
         for(Friend f : friends) {
@@ -34,6 +34,24 @@ public class FriendContainer implements Iterable<Friend> {
         }
 
         return Arrays.copyOf(genderArray, counter);
+    }
+
+    public void printCurrentFriends(){
+        System.out.println("..................................");
+        for(Friend m : this) {
+            if(Objects.nonNull(m))
+                System.out.println(m);
+        }
+        System.out.println("..................................");
+    }
+
+    public void printCurrentFriends(Gender g){
+        System.out.println("..................................");
+        for(Friend m : getFriendsByGender(g)) {
+            if(Objects.nonNull(m))
+                System.out.println(m);
+        }
+        System.out.println("..................................");
     }
 
     private Friend[] grow() {
