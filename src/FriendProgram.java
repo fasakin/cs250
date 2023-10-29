@@ -33,7 +33,9 @@ public class FriendProgram {
         } else if(command.equalsIgnoreCase("f")) {
             listAllFriendBasedOnGender();
         } else if(command.equalsIgnoreCase("q")){
-
+            System.out.println("Application clossing, bye");
+        }else {
+            System.out.println("Invalid entry");
         }
     }
 
